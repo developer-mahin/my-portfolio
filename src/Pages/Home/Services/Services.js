@@ -11,9 +11,10 @@ const Services = () => {
         <div className='lg:py-16 py-6 px-3'>
             <h1 className='text-center text-gray-300 text-7xl font-semibold'>SERVICES</h1>
             <h3 className='text-center text-4xl font-semibold text-gray-800'>What I Do</h3>
+            
             <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-6 mt-6'>
 
-                <div className='border shadow-lg rounded-lg p-6'>
+                <div className='border shadow-lg rounded-lg p-6' data-aos="fade-right">
                     <div className='flex justify-center items-center'>
                         <div className='w-24 h-24 rounded-full border-2 flex justify-center items-center'>
                             <img className='w-16 h-16 ' src={webpage} alt="" />

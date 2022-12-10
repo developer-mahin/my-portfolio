@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import mailbox from "../../../assets/lottie/30851-mail-boxletter-box.json"
 import Lottie from "lottie-react";
 
 const Contact = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_mv4heq6',
+            'template_3u6p59j',
+            form.current,
+            'BLs4I68p-JWBiWffD'
+        )
+            .then((result) => {
+                console.log(result.text);
+                console.log("success")
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
     return (
         <div className='lg:pt-20 pt-6 lg:pb-0 pb-6 px-3'>
             <h1 className='text-center text-gray-300 text-7xl font-semibold'>CONTACT</h1>
@@ -11,23 +32,23 @@ const Contact = () => {
                 <div>
                     <Lottie animationData={mailbox} loop={true} />;
                 </div>
-                <div>
+                <form ref={form} onSubmit={sendEmail}>
                     <label>Name</label>
                     <input
                         type="text"
-                        name='name'
+                        name="user_name"
                         placeholder='Enter your name'
                         className='input input-bordered w-full mb-3 rounded-lg'
                     />
                     <input
                         type="email"
-                        name='email'
+                        name="user_email"
                         placeholder='Enter your email'
                         className='input input-bordered w-full mb-3 rounded-lg'
                     />
                     <input
                         type="number"
-                        name='phone'
+                        name="user_phone"
                         placeholder='Enter phone number'
                         className='input input-bordered w-full mb-3 rounded-lg'
                     />
@@ -38,7 +59,7 @@ const Contact = () => {
                         id=""
                     ></textarea>
                     <button className='bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-3 rounded-md rounded-br-3xl text-gray-100 font-medium button' type="submit">Submit</button>
-                </div>
+                </form>
             </div>
         </div>
     );

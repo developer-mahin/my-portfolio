@@ -18,14 +18,13 @@ const Skills = () => {
             <h1 className='text-center text-gray-300 text-7xl font-semibold'>Skills</h1>
             <h3 className='text-center text-4xl font-semibold text-gray-800'>My Top Skills</h3>
 
-            <div className='grid grid-cols-4 gap-6 items-center justify-center'>
+            <div className='grid lg:grid-cols-5 md:grid-cols-4 grid-cols-3 gap-6 items-center justify-center px-3'>
                 <div className='border shadow-xl rounded-xl p-8'>
                     <div className='flex justify-center items-center'>
                         <ProgressBar width="230" trackWidth="13" percentage="60" />
                     </div>
                     <div className='flex justify-center items-center gap-1'>
                         <img src={HTML} className="w-14" alt="" />
-                        <h2 className='text-xl font-semibold'>HTML</h2>
                     </div>
                 </div>
 
@@ -35,7 +34,6 @@ const Skills = () => {
                     </div>
                     <div className='flex justify-center items-center gap-1'>
                         <img src={CSS} className="w-14" alt="" />
-                        <h2 className='text-xl font-semibold'>CSS</h2>
                     </div>
                 </div>
 
@@ -45,7 +43,6 @@ const Skills = () => {
                     </div>
                     <div className='flex justify-center items-center gap-1'>
                         <img src={Bootstrap} className="w-14" alt="" />
-                        <h2 className='text-xl font-semibold'>Bootstrap</h2>
                     </div>
                 </div>
 
@@ -55,7 +52,6 @@ const Skills = () => {
                     </div>
                     <div className='flex justify-center items-center gap-1'>
                         <img src={tailwind} className="w-14" alt="" />
-                        <h2 className='text-xl font-semibold'>Tailwind CSS</h2>
                     </div>
                 </div>
                 <div className='border shadow-xl rounded-xl p-8'>
@@ -64,7 +60,6 @@ const Skills = () => {
                     </div>
                     <div className='flex justify-center items-center gap-1'>
                         <img src={javaScript} className="w-14" alt="" />
-                        <h2 className='text-xl font-semibold'>JavaScript</h2>
                     </div>
                 </div>
 
@@ -74,7 +69,6 @@ const Skills = () => {
                     </div>
                     <div className='flex justify-center items-center gap-1'>
                         <img src={react} className="w-14" alt="" />
-                        <h2 className='text-xl font-semibold'>React.js</h2>
                     </div>
                 </div>
 
@@ -84,7 +78,6 @@ const Skills = () => {
                     </div>
                     <div className='flex justify-center items-center gap-1'>
                         <img src={node} className="w-14" alt="" />
-                        <h2 className='text-xl font-semibold'>Node.js</h2>
                     </div>
                 </div>
 
@@ -94,7 +87,6 @@ const Skills = () => {
                     </div>
                     <div className='flex justify-center items-center gap-1'>
                         <img src={express} className="w-14" alt="" />
-                        <h2 className='text-xl font-semibold'>Express.js</h2>
                     </div>
                 </div>
 
@@ -104,7 +96,6 @@ const Skills = () => {
                     </div>
                     <div className='flex justify-center items-center gap-1'>
                         <img src={mongo} className="w-14" alt="" />
-                        <h2 className='text-xl font-semibold'>MongoDB</h2>
                     </div>
                 </div>
 
@@ -114,7 +105,6 @@ const Skills = () => {
                     </div>
                     <div className='flex justify-center items-center gap-1'>
                         <img src={wordpress} className="w-14" alt="" />
-                        <h2 className='text-xl font-semibold'>WordPress</h2>
                     </div>
                 </div>
 
