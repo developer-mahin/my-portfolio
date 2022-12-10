@@ -1,0 +1,9 @@
+.banner:hover img {
+  transform: scale(1.1) translateY(-30px);
+  transition: 3s;
+}
+
+.button:hover {
+  transform: scale(1.1) ;
+  transition: .6s;
+}
