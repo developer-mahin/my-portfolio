@@ -17,11 +17,13 @@ const SingleProject = ({ image }) => {
                 </PhotoProvider>
             </div>
             <div className='text-center mt-6 '>
-                <Link to={`/portfolio-details/${image.id}`}
+                <a 
+                target="blank"
+                href={image.github_client} 
                     className='px-8 py-4 mr-4 text-white font-medium buttonRadius'
                 >
-                    Details
-                </Link>
+                    Github Client
+                </a>
                 <a
                     href={image.link}
                     target="blank"

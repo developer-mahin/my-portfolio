@@ -2,6 +2,7 @@
   {
     "id": 1,
     "image": "https://i.ibb.co/CP0kK0d/projects-1.png",
+    "github_client":"https://github.com/developer-mahin/computer-zone-client",
     "link": "https://computer-zone-2fcc0.web.app/", 
     "details": "● A Full Stack Multi-Vendor e-commerce web platform for reselling used laptops. And have three deference roles like buyer, seller, and admin  ● Buyers can book products and report to the admin, and Seller can add, delete, and advertise their products, and the admin can see all buyers and sellers and delete, verify sellers or as well as buyers ● Authentication with google, email, and password using firebase and stripe for payment gateway",
     "Technologies": "Tailwind CSS, DaisyUi, React.js, Node.js, Express.js,MongoDB, Firebase, TanStack Query, Stipe, JSON web token, Axios, Context API, React Router Dom."
@@ -9,16 +10,19 @@
   {
     "id": 2,
     "image": "https://i.ibb.co/TRY0K6X/projects-3.png",
-    "link": "https://law-firm-assignment.web.app/"
+    "link": "https://law-firm-assignment.web.app/",
+    "github_client":"https://github.com/developer-mahin/law-firm-client"
   },
   {
     "id": 3,
     "image": "https://i.ibb.co/zRVWBjg/projects-2.png",
+    "github_client":"https://github.com/developer-mahin/doctor-portal-client",
     "link": "https://doctor-portal-1f882.web.app/"
   },
   {
     "id": 4,
     "image": "https://i.ibb.co/BfGdkSf/projects-4.png",
+    "github_client":"https://github.com/developer-mahin/lear-with-mahin-react-app",
     "link": "https://learn-with-mahin.web.app/"
   }
 ]
