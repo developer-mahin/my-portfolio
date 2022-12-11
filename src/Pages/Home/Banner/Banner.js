@@ -1,6 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import "./Banner.css"
+import "./Banner.css";
 
 const Banner = () => {
     return (
@@ -20,7 +20,8 @@ const Banner = () => {
                         }}
                     /></h3>
                 </div>
-                <p className='text-lg'> I’m Mahen Khan A Highly dedicated & creative MERN familiar, Front End Developer. Always passionate about new information & technologies. Striving to never stop learning and improving. Look forward to Working with a creative team to improve my skill and add value. Building easy-to-use, user-friendly websites, and applications is truly a passion of mine. I am an expert in HTML, CSS, Bootstrap, Tailwind, JavaScripts, React, Firebase, ExpressJs, NodeJs, and MongoDB.In addition to my knowledge, I consider myself a quick learner, self-motivated, responsible, and disciplined person who can work under pressure and solve problems in critical situations with analytical knowledge and the latest technology.</p>
+                <p className='text-lg'>
+                    I’m Mahen Khan Passionate at web development. I love to do this it’s my life-everything. I am a Passionate Web Developer, fast learner, and team player also have strong desire to develop professionally and constantly enhance my skills.</p>
                 <div className='flex items-center mt-4'>
                     <a
                         href="https://drive.google.com/file/d/1Z5Wn4cORBnpx7-bh304lIqb2evd_6QCG/view"

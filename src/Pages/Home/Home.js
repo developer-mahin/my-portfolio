@@ -5,6 +5,7 @@ import Services from './Services/Services';
 import Skills from './Skills/Skills';
 import Technology from './Technology/Technology';
 import Projects from './Projects/Projects';
+import AboutUs from './About/AboutUs';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <Banner></Banner>
             <Services></Services>
             <Technology></Technology>
+            <AboutUs></AboutUs>
             <Skills></Skills>
             <Projects></Projects>
             <ContactSection></ContactSection>
