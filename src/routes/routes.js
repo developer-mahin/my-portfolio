@@ -1,42 +1,48 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
 import Blog from "../Pages/Blog/Blog";
-import Contact from "../Pages/Contact/Contact";
-import Portfolio from "../Pages/Contact/Portfolio/Portfolio";
+import ContactPage from "../Pages/ContactPage/ContactPage";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
+import Portfolio from "../Pages/Portfolio/Portfolio";
+import PortfolioDetails from "../Pages/PortfolioDetails/PortfolioDetails";
 import Resume from "../Pages/Resume/Resume";
 
 
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <Main></Main>, 
+        element: <Main></Main>,
         errorElement: <ErrorPage></ErrorPage>,
-        children:[
+        children: [
             {
-                path: "/", 
+                path: "/",
                 element: <Home></Home>
             },
             {
-                path: "/home", 
+                path: "/home",
                 element: <Home></Home>
             },
             {
-                path: "/resume", 
+                path: "/resume",
                 element: <Resume></Resume>
             },
             {
-                path: "/portfolio", 
+                path: "/portfolio",
                 element: <Portfolio></Portfolio>
             },
             {
-                path: "/blog", 
+                path: "/portfolio-details/:id",
+                element: <PortfolioDetails></PortfolioDetails>,
+                
+            },
+            {
+                path: "/blog",
                 element: <Blog></Blog>
             },
             {
-                path: "/contact", 
-                element: <Contact></Contact>
+                path: "/contact",
+                element: <ContactPage></ContactPage>
             },
         ]
     }

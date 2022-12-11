@@ -1,16 +1,15 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import MyImage from "../../../assets/mahin.png"
 import "./Banner.css"
 
 const Banner = () => {
     return (
         <div className='grid lg:grid-cols-5 grid-cols-1 items-center justify-center gap-6 py-16 banner px-3'>
-            <div className='lg:col-span-2' data-aos="fade-right">
-                <img src={MyImage} className="lg:w-[450px] lg:h-[450px] w-[350px] h-[350px] rounded-full border-gray-200 border-8 object-cover" alt="" />
+            <div className='lg:col-span-2' data-aos="zoom-in-down">
+                <img src="https://i.ibb.co/5GvHJ5k/mahin.png" className="lg:w-[450px] lg:h-[450px] w-[350px] h-[350px] rounded-full border-gray-200 border-8 object-cover" alt="" />
             </div>
-            <div className='lg:col-span-3'>
-                <h2 className='lg:text-6xl text-3xl font-bold text-gray-700'>Mahen Khan</h2>
+            <div className='lg:col-span-3' data-aos="fade-left">
+                <h2 data-aos="fade-down" className='lg:text-6xl text-3xl font-bold text-gray-700'>Mahen Khan</h2>
                 <div className='flex gap-2'>
                     <h3 className="lg:text-3xl text-xl font-semibold text-gray-600">I am a </h3>
                     <h3 className="lg:text-3xl text-xl font-semibold text-gray-600"><Typewriter
@@ -25,7 +24,7 @@ const Banner = () => {
                 <div className='flex items-center mt-4'>
                     <a
                         href="https://drive.google.com/file/d/1Z5Wn4cORBnpx7-bh304lIqb2evd_6QCG/view"
-                        download="https://drive.google.com/file/d/1Z5Wn4cORBnpx7-bh304lIqb2evd_6QCG/view"
+                        target={`_blank`}
                         className='bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 rounded-md rounded-br-3xl text-gray-100 font-medium mr-4 flex items-center gap-2 button'
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

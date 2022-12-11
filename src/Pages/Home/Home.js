@@ -1,10 +1,10 @@
 import React from 'react';
 import Banner from './Banner/Banner';
-import Contact from './Contact/Contact';
-import Portfolio from './Portfolio/Portfolio';
+import ContactSection from '../../Components/Shared/ContactSection/ContactSection';
 import Services from './Services/Services';
 import Skills from './Skills/Skills';
 import Technology from './Technology/Technology';
+import Projects from './Projects/Projects';
 
 const Home = () => {
     return (
@@ -13,8 +13,8 @@ const Home = () => {
             <Services></Services>
             <Technology></Technology>
             <Skills></Skills>
-            <Portfolio></Portfolio>
-            <Contact></Contact>
+            <Projects></Projects>
+            <ContactSection></ContactSection>
         </div>
     );
 };

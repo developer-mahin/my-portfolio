@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import mailbox from "../../../assets/lottie/30851-mail-boxletter-box.json"
 import Lottie from "lottie-react";
 
-const Contact = () => {
+const ContactSection = () => {
 
     const form = useRef();
 
@@ -26,13 +26,13 @@ const Contact = () => {
 
     return (
         <div className='lg:pt-20 pt-6 lg:pb-0 pb-6 px-3'>
-            <h1 className='text-center text-gray-300 text-7xl font-semibold'>CONTACT</h1>
-            <h3 className='text-center text-4xl font-semibold text-gray-800'>Get in touch</h3>
+            <h1 className='text-center text-gray-300 text-7xl font-semibold' data-aos="fade-right">CONTACT</h1>
+            <h3 className='text-center text-4xl font-semibold text-gray-800' data-aos="fade-left">Get in touch</h3>
             <div className='grid lg:grid-cols-2 grid-cols-1 justify-center items-center'>
-                <div>
+                <div data-aos="zoom-out">
                     <Lottie animationData={mailbox} loop={true} />;
                 </div>
-                <form ref={form} onSubmit={sendEmail}>
+                <form data-aos="zoom-in" ref={form} onSubmit={sendEmail}>
                     <label>Name</label>
                     <input
                         type="text"
@@ -65,4 +65,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default ContactSection;
