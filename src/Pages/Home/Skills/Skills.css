@@ -1,1 +1,6 @@
-.progress-bar-rect-wrap-container {height: 15px;}
+.skillImg:hover{
+    transform: scale(1.2);
+    transform: translateY(-25px);
+    transition: .7s;
+    cursor: pointer;
+}
